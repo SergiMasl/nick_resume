@@ -1,0 +1,40 @@
+.art {
+    border: 1px solid black;
+    max-width: 300px;
+    width: 300px;
+    max-height: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.Home {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+    width: 1200px;
+}
+.art-img {
+    display: block;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.art-title {
+    position: absolute;
+    z-index: 1;
+}
+
+/* .display {
+    display: none;
+} */
+
+.art-img:hover {
+    filter: grayscale(0.5);
+}
+
