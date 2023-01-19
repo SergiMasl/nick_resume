@@ -1,0 +1,25 @@
+.about-contener {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-logo, .about-content {
+    max-width: 400px;
+    width: 100%;
+}
+
+.about-img{
+    max-width: 100%;
+    width: 100%;
+}
+
+p {
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-size: 1em;;
+}
+
+h1 > p {
+    font-size: 3px;
+}
