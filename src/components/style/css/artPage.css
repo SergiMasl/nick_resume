@@ -1,0 +1,10 @@
+.btm_art-back {
+    width: 100px;
+    height: 30px;
+    border: 1px solid red;
+}
+
+.artPageMask {
+    display: none;
+}
+

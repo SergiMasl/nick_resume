@@ -28,13 +28,20 @@
 .art-title {
     position: absolute;
     z-index: 1;
+    display: none;
+    color: white;
+    font-size: 20px;
 }
 
-/* .display {
-    display: none;
-} */
-
 .art-img:hover {
-    filter: grayscale(0.5);
+    filter: grayscale(0.7);
+}
+
+.art-masked {
+    filter: grayscale(0.7);
+}
+
+.art:hover > .art-title {
+    display: inline-block;
 }
 

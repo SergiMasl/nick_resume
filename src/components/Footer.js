@@ -11,16 +11,16 @@ function Footer() {
             <div className='footer-email'>nhuangart@gmail.com</div>
             <div className='underline'></div>
             <div className='footer-icons footer-icons-footer'>
-                <a herf='https://www.instagram.com/insomniacnick/' className="icon-footer">
+                <a href='https://www.instagram.com/insomniacnick/' className="icon-footer">
                     <img src={Instagram} alt="IG" className='nav-social-links' />
                 </a>
-                <a herf='#' className="icon-footer">
+                <a href='#' className="icon-footer">
                     <img src={LinkeId} alt="LinkeId" className='nav-social-links'/>
                 </a>
-                <a herf='#' className="icon-footer">
+                <a href='#' className="icon-footer">
                     <img src={Email} alt="Email" className='nav-social-links'/>
                 </a>
-                <a herf='#' className="icon-footer">
+                <a href='#' className="icon-footer">
                     <img src={Link} alt="Other" className='nav-social-links'/>
                 </a>
             </div>
