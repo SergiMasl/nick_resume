@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ArtPage from "./components/ArtPage";
+
 import { useState } from "react";
 
 function App() {
@@ -16,9 +17,11 @@ function App() {
       <Navbar
         onChangeRenderId={setRenderId}
         artPageIs={artPageIs}
+        renderId={renderId}
         setArtPage={setArtPage}
         setArtPageId={setArtPageId}
       />
+
       <Home
         renderId={renderId}
         setArtPage={setArtPage}

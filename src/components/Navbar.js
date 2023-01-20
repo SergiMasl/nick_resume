@@ -6,7 +6,19 @@ import LinkeId from "./style/svg/linkedin.svg";
 import Link from "./style/svg/link.svg";
 import Email from "./style/svg/email.svg";
 
-function Navbar({ onChangeRenderId, setArtPage, setArtPageId }) {
+function Navbar({
+  onChangeRenderId,
+  setArtPage,
+  setArtPageId,
+  renderId,
+  artPageIs,
+}) {
+  console.log(renderId);
+  const btmActive1 = renderId === "resume" ? " onActive" : "offActive ";
+  const btmActive2 = renderId === "characters" ? " onActive" : "offActive ";
+  const btmActive3 = renderId === "other" ? " onActive" : "offActive ";
+  const btmActive4 = renderId === "about" ? " onActive" : "offActive ";
+
   return (
     <div className="nav-contener">
       <div className="nav-home">
@@ -16,7 +28,7 @@ function Navbar({ onChangeRenderId, setArtPage, setArtPageId }) {
       <div className="nav-content">
         <a
           href="#"
-          className="nav-content_a"
+          className={btmActive2}
           onClick={() => {
             onChangeRenderId("characters");
             setArtPage(false);
@@ -28,7 +40,7 @@ function Navbar({ onChangeRenderId, setArtPage, setArtPageId }) {
         <p>|</p>
         <a
           href="#"
-          className="nav-content_a"
+          className={btmActive3}
           onClick={() => {
             onChangeRenderId("other");
             setArtPage(false);
@@ -40,7 +52,7 @@ function Navbar({ onChangeRenderId, setArtPage, setArtPageId }) {
         <p>|</p>
         <a
           href="#"
-          className="nav-content_a"
+          className={btmActive4}
           onClick={() => {
             onChangeRenderId("about");
             setArtPage(false);
@@ -52,7 +64,7 @@ function Navbar({ onChangeRenderId, setArtPage, setArtPageId }) {
         <p>|</p>
         <a
           href="#"
-          className="nav-content_a"
+          className={btmActive1}
           onClick={() => {
             onChangeRenderId("resume");
             setArtPage(false);
